@@ -13,7 +13,7 @@ This is a simple shopping cart web application built using HTML, CSS, and JavaSc
 
 ## 📁 Folder Structure
 - `index.html` - Main HTML file containing the structure of the shop
-- `styles (1) 1.css` - CSS file for styling the shop interface and credit card form
+- `styles.css` - CSS file for styling the shop interface and credit card form
 - `front.js` - JavaScript file for rendering products, cart, and checkout UI
 - `script.js` - JavaScript file implementing product logic, cart functionality, and checkout operations
 
