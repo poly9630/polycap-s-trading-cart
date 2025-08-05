@@ -74,3 +74,28 @@ function pay(amount) {
     balance = amount - total;
     return balance;
 }
+// Handle credit card form submission
+document.addEventListener('DOMContentLoaded', function () {
+  const cardForm = document.getElementById('card-payment-form');
+
+  if (cardForm) {
+    cardForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('cardholder-name').value.trim();
+      const number = document.getElementById('card-number').value.trim();
+      const expiry = document.getElementById('expiration-date').value;
+      const cvv = document.getElementById('cvv').value.trim();
+
+      // Basic validation
+      if (!name || !number.match(/^\d{16}$/) || !cvv.match(/^\d{3}$/)) {
+        alert('Please enter valid card details.');
+        return;
+      }
+
+      // Simulate payment success
+      alert(`Payment successful!\nThank you, ${name}.`);
+      cardForm.reset();
+    });
+  }
+});
