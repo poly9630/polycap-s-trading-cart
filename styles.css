@@ -82,3 +82,42 @@ button:hover {
     border: 1px solid #ccc;
     vertical-align: middle
 }
+.credit-card-form {
+  background: #f9f9f9;
+  padding: 2em;
+  margin-top: 2em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.credit-card-form h3 {
+  margin-bottom: 1em;
+}
+
+.credit-card-form label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.credit-card-form input {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.credit-card-form button {
+  margin-top: 1.5em;
+  padding: 1em;
+  background-color: #5d7876;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.credit-card-form button:hover {
+  background-color: #3e5c5a;
+}
