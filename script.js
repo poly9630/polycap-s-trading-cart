@@ -1,5 +1,5 @@
 
-// Global variables
+// Global variables for the script.js file
 const products = [
     {
         name: "cherry",
@@ -27,7 +27,7 @@ const products = [
 let cart = [];
 let balance = 0;
 
-// Adds product to cart or increases quantity if already in cart
+// Adds product to cart or increases quantity if already in cart until no  itmes.
 function addProductToCart(productId) {
     const product = products.find(p => p.productId === productId);
     const cartItem = cart.find(item => item.productId === productId);
@@ -68,13 +68,13 @@ function cartTotal() {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
 }
 
-// Processes payment and returns balance
+// Processes payment and returns balance but taking out what acustomer paid and the total owed
 function pay(amount) {
     const total = cartTotal();
     balance = amount - total;
     return balance;
 }
-// Handle credit card form submission
+// Handle credit card form submission. this allows info to be entered into the credit card form.
 document.addEventListener('DOMContentLoaded', function () {
   const cardForm = document.getElementById('card-payment-form');
 
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Simulate payment success
+      // Simulates payment success this shows that the payment was done successfully.
       alert(`Payment successful!\nThank you, ${name}.`);
       cardForm.reset();
     });
