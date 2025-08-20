@@ -1,0 +1,12 @@
+{
+    "name": "front-app",
+    "version": "1.0.0",
+    "description": "A simple front-end shopping cart application",
+    "main": "front 1.js",
+    "scripts": {
+        "start": "echo \"No start script defined\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {}
+}
