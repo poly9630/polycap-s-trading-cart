@@ -4,8 +4,8 @@
     "description": "A simple front-end shopping cart application",
     "main": "front1.js",
     "scripts": {
-        "start": "node front1.js",
-        "dev": "nodemon front1.js"
+        "start": "node front.js",
+        "dev": "nodemon front.js"
     },
     "author": "",
     "license": "ISC",
