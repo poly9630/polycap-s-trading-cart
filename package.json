@@ -2,11 +2,17 @@
     "name": "front-app",
     "version": "1.0.0",
     "description": "A simple front-end shopping cart application",
-    "main": "front 1.js",
+    "main": "front1.js",
     "scripts": {
-        "start": "echo \"No start script defined\""
+        "start": "node front1.js",
+        "dev": "nodemon front1.js"
     },
     "author": "",
     "license": "ISC",
-    "dependencies": {}
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
 }
