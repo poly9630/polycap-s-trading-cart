@@ -2,7 +2,7 @@
     "name": "front-app",
     "version": "1.0.0",
     "description": "A simple front-end shopping cart application",
-    "main": "front1.js",
+    "main": "front.js",
     "scripts": {
         "start": "node front.js",
         "dev": "nodemon front.js"
